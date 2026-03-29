@@ -19,18 +19,18 @@ function changeBoxColor() {
  */
 function addNewItem() {
   // TODO: Implement this function
-  let newItem = document.createAttribute('li');
+  const newItem = document.createElement('li');
   newItem.textContent = 'New Item';
-  const itemlist = document.getElementById('item-list');
-  itemlist.appendChild(newItem);
+  const itemList = document.getElementById('item-list');
+  itemList.appendChild(newItem);
 }
 /**
  * Selects the paragraph with the class 'content-para' and adds the class 'highlight' to it.
  */
 function highlightParagraph() {
   // TODO: Implement this function
-  const para = document.querySelector('.content-para');
-  para.classList.add('highlight');
+  const paragraph = document.querySelector('.content-para');
+  paragraph.classList.add('highlight');
 }
 /**
  * Selects the element with the id 'to-be-removed' and removes it from the DOM.
